@@ -1,0 +1,20 @@
+{
+  "name": "echo-chamber",
+  "version": "1.0.0",
+  "description": "Small electron app for the purpose of talking to yourself.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^10.1.5"
+  },
+  "dependencies": {
+    "electron-wix-msi": "^3.0.4",
+    "jquery": "^3.5.1",
+    "nedb-promises": "^4.1.1"
+  }
+}
