@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Echo Chamber</title>
-  </head>
-  <body>
-    <div class="center">
-      <form id = "main">
-        <label class = "centertext"><h1>Hi <span id = "username"></span>!</h1></label>
-        <textarea id = "input" placeholder="What's on your mind today?"></textarea><br>
-        <!-- 
-          <input id = 'input' placeholder="What's on your mind today?" type=""><br>
-        --> 
-        <input type="submit" value="Enter">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Echo Chamber</title>
+</head>
+
+<body>
+	<div class="center">
+		<form id="main">
+			<label class = "centertext"><h1>Hi <span id = "username"></span>!</h1></label>
+        <textarea id = "input" class = "outline" placeholder="What's on your mind today?" maxlength="500"></textarea><br>
+        <input id = 'submit' type="submit" value="Enter" accept="">
+        <div id = 'count'>500</div>
       </form>
-      <div id = "log"></div>
+      <div id = "log" class="centertext"></div>
     </div>
     <script src='./renderer.js'></script>
   </body>

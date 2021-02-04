@@ -3,8 +3,8 @@ const path = require('path');
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 700,
+    height: 550,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js'),
@@ -13,6 +13,12 @@ function createWindow () {
     autoHideMenuBar: true,
     icon:'./favicon.ico',
   });
+
+  mainWindow.webContents.on('did-finish-load', () => {
+    mainWindow.webContents.setZoomFactor(1);
+    mainWindow.webContents.setVisualZoomLevelLimits(1, 1);
+  });
+
 
   mainWindow.loadFile('web/index.htm');
 }

@@ -1,16 +1,31 @@
 .center {
   position: absolute;
   left: 50%;
+  top:40%;
   margin-right: -50%;
-  transform: translate(-50%)
+  transform: translate(-50%) translateY(-50%);
 }
-  
+
 .centertext{
   text-align: center;
 }
-  
-#input {
-    resize: none;
-    width: 300px;
-    height: 100px;
+
+textarea {
+  resize: none;
+  width: 600px;
+  height: 200px;
+  /*background-color:;*/
 }
+
+#count {
+  float: right;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.outline {
+    outline: none;
+}
+
