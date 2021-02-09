@@ -4,19 +4,20 @@
   "description": "Small electron app for the purpose of talking to yourself.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "install-app-deps"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^10.1.5",
+    "electron": "^10.3.2",
     "electron-builder": "^22.9.1",
-    "sqlite3": "^5.0.1"
+    "electron-rebuild": "^2.3.5"
   },
   "dependencies": {
+    "better-sqlite3": "^7.1.2",
     "electron-wix-msi": "^3.0.4",
-    "jquery": "^3.5.1",
-    "sequelize": "^6.5.0"
+    "jquery": "^3.5.1"
   }
 }
