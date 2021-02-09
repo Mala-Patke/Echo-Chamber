@@ -17,7 +17,6 @@
   "dependencies": {
     "electron-wix-msi": "^3.0.4",
     "jquery": "^3.5.1",
-    "knex": "^0.21.17",
     "sequelize": "^6.5.0"
   }
 }
