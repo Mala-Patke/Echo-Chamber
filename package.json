@@ -10,11 +10,14 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^10.1.5"
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1",
+    "sqlite3": "^5.0.1"
   },
   "dependencies": {
     "electron-wix-msi": "^3.0.4",
     "jquery": "^3.5.1",
-    "nedb-promises": "^4.1.1"
+    "knex": "^0.21.17",
+    "sequelize": "^6.5.0"
   }
 }
